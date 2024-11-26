@@ -31,7 +31,7 @@ namespace Taklif_1
             }
             else
             {
-                Class2 class2 = new Class2()
+                Student_Ef class2 = new Student_Ef()
                 {
                     Name = TxtName.Text,
                     LastName = TxtLastName.Text,
@@ -54,7 +54,7 @@ namespace Taklif_1
             }
             else
             {
-                Class2 class2 = new Class2()
+                Student_Ef class2 = new Student_Ef()
                 {
                     CodeMeli = TxtDelete.Text
                 };
@@ -77,7 +77,7 @@ namespace Taklif_1
             }
             else
             {
-                Class2 class2 = new Class2()
+                Student_Ef class2 = new Student_Ef()
                 {
                     CodeMeli = TxtUpdateCode.Text,
                     LastName = TxtUpdateLasteName.Text,
@@ -97,7 +97,7 @@ namespace Taklif_1
             }
             else
             {
-                Class2 class2 = new Class2();
+                Student_Ef class2 = new Student_Ef();
                 dataGridView1.DataSource = class2.Selectef();
             }
         }

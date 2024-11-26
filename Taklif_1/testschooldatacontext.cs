@@ -13,6 +13,6 @@ namespace Taklif_1
         {
 
         }
-        public DbSet<Class2> testschools { get; set; }
+        public DbSet<Student_Ef> testschools { get; set; }
     }
 }

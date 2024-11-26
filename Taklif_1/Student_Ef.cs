@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Taklif_1
 {
-    public class Class2 : ClassProp
+    public class Student_Ef : StudentProperty
     {
         testschooldatacontext db = new testschooldatacontext();
         public void Insertef()
         {
-            db.testschools.Add(new Class2
+            db.testschools.Add(new Student_Ef
             {
                 CodeMeli = this.CodeMeli,
                 LastName = this.LastName,
@@ -33,7 +33,7 @@ namespace Taklif_1
             students.Name=this.Name;
             db.SaveChanges();
         }
-        public List<Class2> Selectef()
+        public List<Student_Ef> Selectef()
         {
             var students=db.testschools.ToList();
             return students.ToList();

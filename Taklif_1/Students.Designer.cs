@@ -65,14 +65,14 @@
             this.TxtLastName.Location = new System.Drawing.Point(24, 61);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(100, 20);
-            this.TxtLastName.TabIndex = 0;
+            this.TxtLastName.TabIndex = 1;
             // 
             // ButInsert
             // 
             this.ButInsert.Location = new System.Drawing.Point(34, 127);
             this.ButInsert.Name = "ButInsert";
             this.ButInsert.Size = new System.Drawing.Size(75, 23);
-            this.ButInsert.TabIndex = 1;
+            this.ButInsert.TabIndex = 3;
             this.ButInsert.Text = "Insert";
             this.ButInsert.UseVisualStyleBackColor = true;
             this.ButInsert.Click += new System.EventHandler(this.ButInsert_Click);
@@ -83,7 +83,7 @@
             this.LblName.Location = new System.Drawing.Point(156, 33);
             this.LblName.Name = "LblName";
             this.LblName.Size = new System.Drawing.Size(35, 13);
-            this.LblName.TabIndex = 2;
+            this.LblName.TabIndex = 16;
             this.LblName.Text = "Name";
             // 
             // LblLastName
@@ -92,7 +92,7 @@
             this.LblLastName.Location = new System.Drawing.Point(156, 68);
             this.LblLastName.Name = "LblLastName";
             this.LblLastName.Size = new System.Drawing.Size(55, 13);
-            this.LblLastName.TabIndex = 2;
+            this.LblLastName.TabIndex = 17;
             this.LblLastName.Text = "LastName";
             // 
             // label1
@@ -101,7 +101,7 @@
             this.label1.Location = new System.Drawing.Point(283, -3);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 192);
-            this.label1.TabIndex = 3;
+            this.label1.TabIndex = 11;
             // 
             // label2
             // 
@@ -109,7 +109,7 @@
             this.label2.Location = new System.Drawing.Point(-4, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 36);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 15;
             // 
             // LblCodMeli
             // 
@@ -117,7 +117,7 @@
             this.LblCodMeli.Location = new System.Drawing.Point(156, 99);
             this.LblCodMeli.Name = "LblCodMeli";
             this.LblCodMeli.Size = new System.Drawing.Size(51, 13);
-            this.LblCodMeli.TabIndex = 5;
+            this.LblCodMeli.TabIndex = 18;
             this.LblCodMeli.Text = "CodeMeli";
             // 
             // TxtCodeMeli
@@ -126,7 +126,7 @@
             this.TxtCodeMeli.MaxLength = 10;
             this.TxtCodeMeli.Name = "TxtCodeMeli";
             this.TxtCodeMeli.Size = new System.Drawing.Size(100, 20);
-            this.TxtCodeMeli.TabIndex = 0;
+            this.TxtCodeMeli.TabIndex = 2;
             // 
             // LblDelete
             // 
@@ -134,7 +134,7 @@
             this.LblDelete.Location = new System.Drawing.Point(501, 55);
             this.LblDelete.Name = "LblDelete";
             this.LblDelete.Size = new System.Drawing.Size(51, 13);
-            this.LblDelete.TabIndex = 8;
+            this.LblDelete.TabIndex = 10;
             this.LblDelete.Text = "CodeMeli";
             // 
             // ButDelete
@@ -142,7 +142,7 @@
             this.ButDelete.Location = new System.Drawing.Point(379, 83);
             this.ButDelete.Name = "ButDelete";
             this.ButDelete.Size = new System.Drawing.Size(75, 23);
-            this.ButDelete.TabIndex = 7;
+            this.ButDelete.TabIndex = 9;
             this.ButDelete.Text = "Delete";
             this.ButDelete.UseVisualStyleBackColor = true;
             this.ButDelete.Click += new System.EventHandler(this.ButDelete_Click);
@@ -153,7 +153,7 @@
             this.TxtDelete.MaxLength = 10;
             this.TxtDelete.Name = "TxtDelete";
             this.TxtDelete.Size = new System.Drawing.Size(100, 20);
-            this.TxtDelete.TabIndex = 6;
+            this.TxtDelete.TabIndex = 8;
             // 
             // label3
             // 
@@ -161,7 +161,7 @@
             this.label3.Location = new System.Drawing.Point(316, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 36);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 12;
             // 
             // label4
             // 
@@ -169,7 +169,7 @@
             this.label4.Location = new System.Drawing.Point(283, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(38, 192);
-            this.label4.TabIndex = 3;
+            this.label4.TabIndex = 13;
             // 
             // LblUpdateCode
             // 
@@ -177,7 +177,7 @@
             this.LblUpdateCode.Location = new System.Drawing.Point(115, 268);
             this.LblUpdateCode.Name = "LblUpdateCode";
             this.LblUpdateCode.Size = new System.Drawing.Size(67, 13);
-            this.LblUpdateCode.TabIndex = 15;
+            this.LblUpdateCode.TabIndex = 21;
             this.LblUpdateCode.Text = "OldCodeMeli";
             // 
             // LblUpdatelastName
@@ -186,7 +186,7 @@
             this.LblUpdatelastName.Location = new System.Drawing.Point(115, 237);
             this.LblUpdatelastName.Name = "LblUpdatelastName";
             this.LblUpdatelastName.Size = new System.Drawing.Size(77, 13);
-            this.LblUpdatelastName.TabIndex = 13;
+            this.LblUpdatelastName.TabIndex = 20;
             this.LblUpdatelastName.Text = "NewLastName";
             // 
             // LblUpdateName
@@ -195,7 +195,7 @@
             this.LblUpdateName.Location = new System.Drawing.Point(115, 202);
             this.LblUpdateName.Name = "LblUpdateName";
             this.LblUpdateName.Size = new System.Drawing.Size(57, 13);
-            this.LblUpdateName.TabIndex = 14;
+            this.LblUpdateName.TabIndex = 19;
             this.LblUpdateName.Text = "NewName";
             // 
             // butUpdate
@@ -203,7 +203,7 @@
             this.butUpdate.Location = new System.Drawing.Point(9, 290);
             this.butUpdate.Name = "butUpdate";
             this.butUpdate.Size = new System.Drawing.Size(75, 23);
-            this.butUpdate.TabIndex = 12;
+            this.butUpdate.TabIndex = 7;
             this.butUpdate.Text = "Update";
             this.butUpdate.UseVisualStyleBackColor = true;
             this.butUpdate.Click += new System.EventHandler(this.butUpdate_Click);
@@ -214,21 +214,21 @@
             this.TxtUpdateCode.MaxLength = 10;
             this.TxtUpdateCode.Name = "TxtUpdateCode";
             this.TxtUpdateCode.Size = new System.Drawing.Size(100, 20);
-            this.TxtUpdateCode.TabIndex = 9;
+            this.TxtUpdateCode.TabIndex = 6;
             // 
             // TxtUpdateLasteName
             // 
             this.TxtUpdateLasteName.Location = new System.Drawing.Point(9, 229);
             this.TxtUpdateLasteName.Name = "TxtUpdateLasteName";
             this.TxtUpdateLasteName.Size = new System.Drawing.Size(100, 20);
-            this.TxtUpdateLasteName.TabIndex = 10;
+            this.TxtUpdateLasteName.TabIndex = 5;
             // 
             // TxtUpdateName
             // 
             this.TxtUpdateName.Location = new System.Drawing.Point(9, 195);
             this.TxtUpdateName.Name = "TxtUpdateName";
             this.TxtUpdateName.Size = new System.Drawing.Size(100, 20);
-            this.TxtUpdateName.TabIndex = 11;
+            this.TxtUpdateName.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -236,7 +236,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(324, 190);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(279, 167);
-            this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.TabIndex = 14;
             // 
             // Students
             // 

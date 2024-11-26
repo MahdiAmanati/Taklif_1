@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Taklif_1
 {
-    public class Class1 : ClassProp
+    public class Class1 : StudentProperty
     {
         string Cs = "Data Source=.;Initial Catalog=testschool;Integrated Security=True";
         public void InsertAdo()
         {
                 SqlConnection conn = new SqlConnection(Cs);
                 conn.Open();
-                string query = "INSERT INTO [dbo].[Class2] ([Name],[LastName],[CodeMeli]) VALUES (@Name,@LastName,@CodeMeli)";
+                string query = "INSERT INTO [dbo].[Student_Ef] ([Name],[LastName],[CodeMeli]) VALUES (@Name,@LastName,@CodeMeli)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@Name", Name);
                 cmd.Parameters.AddWithValue("@LastName", LastName);
@@ -27,7 +27,7 @@ namespace Taklif_1
         {
             SqlConnection conn = new SqlConnection(Cs);
             conn.Open();
-            string query = "DELETE FROM [dbo].[Class2] WHERE CodeMeli=@CodeMeli";
+            string query = "DELETE FROM [dbo].[Student_Ef] WHERE CodeMeli=@CodeMeli";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@CodeMeli", CodeMeli);
             cmd.ExecuteNonQuery();
@@ -37,7 +37,7 @@ namespace Taklif_1
         {
             SqlConnection conn = new SqlConnection(Cs);
             conn.Open();
-            string query = "UPDATE [dbo].[Class2] SET [Name] = @Name,[LastName] = @LastName WHERE CodeMeli=@CodeMeli";
+            string query = "UPDATE [dbo].[Student_Ef] SET [Name] = @Name,[LastName] = @LastName WHERE CodeMeli=@CodeMeli";
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@Name", Name);
             cmd.Parameters.AddWithValue("@LastName", LastName);
@@ -49,7 +49,7 @@ namespace Taklif_1
         {
             SqlConnection con = new SqlConnection(Cs);
             con.Open();
-            string query = "SELECT [Name] ,[LastName],[CodeMeli] FROM [dbo].[Class2]";
+            string query = "SELECT [Name] ,[LastName],[CodeMeli] FROM [dbo].[Student_Ef]";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
