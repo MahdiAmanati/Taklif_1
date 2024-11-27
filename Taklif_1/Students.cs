@@ -40,6 +40,7 @@ namespace Taklif_1
                 class2.Insertef();
             }
             Students_Load(null, EventArgs.Empty);
+            ClearTextBox();
         }
 
         private void ButDelete_Click(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace Taklif_1
                 class2.Deleteef();
             }
             Students_Load(null, EventArgs.Empty);
+            ClearTextBox();
         }
 
         private void butUpdate_Click(object sender, EventArgs e)
@@ -86,6 +88,7 @@ namespace Taklif_1
                 class2.Updateef();
             }
             Students_Load(null, EventArgs.Empty);
+            ClearTextBox();
         }
 
         private void Students_Load(object sender, EventArgs e)
@@ -99,6 +102,42 @@ namespace Taklif_1
             {
                 Student_Ef class2 = new Student_Ef();
                 dataGridView1.DataSource = class2.Selectef();
+            }
+        }
+
+        private void TxtDelete_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsDigit(e.KeyChar)))
+            {
+                e.Handled = true;
+            }
+            EnterKey(e);
+        }
+
+        private void TxtName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            EnterKey(e);
+        }
+        private void EnterKey(KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                SendKeys.Send("{Tab}");
+            }
+        }
+        private void ClearTextBox()
+        {
+            foreach (object obj in this.Controls)
+            {
+                if (obj is TextBox)
+                {
+                    ((TextBox)obj).Text = "";
+                }
             }
         }
     }

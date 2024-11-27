@@ -59,6 +59,7 @@
             this.TxtName.Name = "TxtName";
             this.TxtName.Size = new System.Drawing.Size(100, 20);
             this.TxtName.TabIndex = 0;
+            this.TxtName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
             // TxtLastName
             // 
@@ -66,6 +67,7 @@
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(100, 20);
             this.TxtLastName.TabIndex = 1;
+            this.TxtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
             // ButInsert
             // 
@@ -127,6 +129,7 @@
             this.TxtCodeMeli.Name = "TxtCodeMeli";
             this.TxtCodeMeli.Size = new System.Drawing.Size(100, 20);
             this.TxtCodeMeli.TabIndex = 2;
+            this.TxtCodeMeli.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDelete_KeyPress);
             // 
             // LblDelete
             // 
@@ -154,6 +157,7 @@
             this.TxtDelete.Name = "TxtDelete";
             this.TxtDelete.Size = new System.Drawing.Size(100, 20);
             this.TxtDelete.TabIndex = 8;
+            this.TxtDelete.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDelete_KeyPress);
             // 
             // label3
             // 
@@ -215,6 +219,7 @@
             this.TxtUpdateCode.Name = "TxtUpdateCode";
             this.TxtUpdateCode.Size = new System.Drawing.Size(100, 20);
             this.TxtUpdateCode.TabIndex = 6;
+            this.TxtUpdateCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtDelete_KeyPress);
             // 
             // TxtUpdateLasteName
             // 
@@ -222,6 +227,7 @@
             this.TxtUpdateLasteName.Name = "TxtUpdateLasteName";
             this.TxtUpdateLasteName.Size = new System.Drawing.Size(100, 20);
             this.TxtUpdateLasteName.TabIndex = 5;
+            this.TxtUpdateLasteName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
             // TxtUpdateName
             // 
@@ -229,6 +235,7 @@
             this.TxtUpdateName.Name = "TxtUpdateName";
             this.TxtUpdateName.Size = new System.Drawing.Size(100, 20);
             this.TxtUpdateName.TabIndex = 4;
+            this.TxtUpdateName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtName_KeyPress);
             // 
             // dataGridView1
             // 

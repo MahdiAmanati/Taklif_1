@@ -35,8 +35,7 @@ namespace Taklif_1
         }
         public List<Student_Ef> Selectef()
         {
-            var students=db.testschools.ToList();
-            return students.ToList();
+           return db.testschools.ToList();
         }
     }
 }
